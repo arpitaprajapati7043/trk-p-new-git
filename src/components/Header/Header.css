@@ -1,0 +1,146 @@
+/* Make navbar transparent */
+.navbar-transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+.navbar-nav .nav-link {
+    color: black !important;
+  }
+  .navbar-nav a:hover {
+    color:  #e67e22;
+    border-bottom: 2px solid  #e67e22;
+    border-top: 2px solid  #e67e22;
+    padding: 6px 10px;
+  }
+  .text-c{
+   color: #040407;
+  }
+  /* Remove top margin for Herocmp to position it directly under the fixed navbar */
+  body {
+    padding-top: 70px; /* Adjust the padding for space for the fixed header, if necessary */
+  }
+  
+  /* Ensure content in Herocmp is styled properly */
+  .hero-content {
+    position: relative;
+    z-index: 1; /* Ensure it stays below the navbar */
+  }
+  
+
+
+
+  /* a:hover{
+    color:  #e67e22;
+    border-bottom: 2px solid  #e67e22;
+    border-top: 2px solid  #e67e22;
+    padding: 6px 10px;
+  } */
+
+
+
+
+  /* Header.css */
+
+.navbar-transparent {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-transparent.scrolled {
+   background-color: #e5e7e9  !important; /* Change to any red shade you prefer */
+  }
+  
+
+  
+
+
+
+
+
+ /* Ensure the container is large enough */
+.container1 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    position: relative; /* Positioning context for absolute elements */
+   
+  }
+  
+  /* Make the icon button responsive */
+  .icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:26px; /* Width of the button (static for now, or use responsive units) */
+    height:26px; /* Height of the button */
+    color: #333333;
+    background: #e67e22 ;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10%; /* Circular button */
+    margin-top: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    cursor: pointer;
+  }
+  
+  .icon-button:active {
+    background: #cccccc;
+  }
+  
+  /* Badge styles */
+  .icon-button__badge {
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    background:#E50046;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px; /* Adjust font size for better fit */
+  }
+  
+  /* Responsive adjustments (if needed) */
+  @media (max-width: 768px) {
+    .navbar-transparent{
+      background-color: white !important;
+      color: black !important;
+    }
+    .navbar .navbar-nav .nav-link {
+      color: black !important;
+    }
+    .text-light{
+      color: black !important;
+    }
+    .container {
+      width: 100%; /* Adjust the container width for smaller screens */
+      height: auto; /* Allow the height to adjust automatically */
+    }
+  
+    .icon-button {
+      width: 7vw; /* Make the button size responsive */
+      height: 7vw;
+    }
+  
+    .icon-button__badge {
+        padding: 12px;
+      width: 17%;
+      height: 17%;
+      font-size: 3vw;
+    }
+  }
+  

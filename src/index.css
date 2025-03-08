@@ -1,0 +1,149 @@
+/* Importing attractive fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@500;700&display=swap');
+:root {
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #646cff;
+  --secondary-color: #535bf2;
+  --background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --footer-main-color:  rgba(13, 62, 84, 0.9);
+  --footer-sub-color: rgba(255, 255, 255, 0.87);
+  --link-hover-color: #747bff;
+  --button-bg-color: #1a1a1a;
+  --button-hover-color: #646cff;
+  --button-text-color: white;
+}
+
+.link{
+  text-decoration: none;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif; /* Using the 'Roboto' font for body */
+  background-color: #bcd3db;
+  color: white;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif; /* Using 'Poppins' for header */
+  font-size: 3.5em; /* Making the header larger */
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.border-radius{
+  border-radius:10px
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.4em;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+button:hover {
+  border-color: #646cff;
+  background-color: #646cff;
+  transform: scale(1.05); /* Slight scaling on hover for a more interactive feel */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/*footer start*/
+.footer-bg {
+
+  background-color:var(--footer-main-color);
+  gap: 12rem;
+
+}
+
+ul{
+  margin-left: -23px;
+  list-style-type: disc;
+  color:  #e67e22;
+}
+.f-txt{
+  color: #85929e
+
+}
+/*footer end*/
+
+/* Media queries for better readability in light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  h1 {
+    color: #242424;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #333333;
+    border: 1px solid #ddd;
+  }
+
+  button:hover {
+    background-color: #646cff;
+    border-color: #535bf2;
+  }
+}
+
+
+.why-title {
+  display: inline-block; /* Ensure it's treated like an inline-block */
+  text-align: center; /* Center the text */
+}
+
+.why-title::after {
+  content: ''; /* This ensures the pseudo-element is rendered */
+  display: block; /* Makes the pseudo-element behave like a block element */
+  width: 50px; /* Sets the width of the border */
+  height: 2px; /* Sets the height of the border */
+  background-color: #e67e22; /* Border color */
+  margin-top: 5px; /* Space between the text and the border */
+  margin-left: auto; /* Centering the border horizontally */
+  margin-right: auto; /* Centering the border horizontally */
+}

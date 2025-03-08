@@ -1,0 +1,81 @@
+
+  
+  .timeline-container {
+    width: 50%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    margin-left: 60px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 65px;
+    position: relative;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: -25px; /* Align circle to the left */
+    z-index: 2;
+    border: 2px solid  #d35400 ;
+    padding: 7px;
+    margin-top: -10px;
+  }
+  .circle-sub{
+    border: 2px solid green;
+    width: 84px;
+    height: 32px;
+    background-color:  #e67e22
+    ;
+  border-radius: 50%;
+  border: 5px solid #283747
+  ;
+  }
+  
+  .content {
+    margin-left: 30px; /* Space for circle */
+    padding: 10px;
+   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .content h3 {
+  text-align: start;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .content p {
+    text-align: start;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Connecting line between steps */
+  /* Connecting line between steps */
+.line {
+    position: absolute;
+    top: 48%;
+    left: 1px; /* Position of the line from the left */
+    width: 2px;
+    height:160px;
+    border-left: 2px dotted #c9760f; /* Dotted line with desired color */
+    z-index: 1;
+  }
+  

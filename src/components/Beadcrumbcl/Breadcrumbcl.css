@@ -1,0 +1,72 @@
+/* Container for breadcrumb and background image
+.breadcrumb-container {
+    position: relative;
+    background-image: url(ggg.jpg); 
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+} */
+
+/* Semi-transparent overlay for better visibility */
+/* .breadcrumb-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(13, 62, 84, 0.7); /* Transparent dark o
+    z-index: 1;verlay */
+
+
+/* Style for breadcrumb itself */
+.breadcrumb {
+    position: relative;
+    z-index: 2; /* Ensure breadcrumb is above overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ensure breadcrumb text is white */
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for better contrast */
+    margin-top: 1px; /* Adjust if necessary */
+}
+.breadcrumb-item  {
+    color: white !important; /* Force the breadcrumb link to be white */
+    font-size: .7rem;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adding some shadow for contrast */
+    margin-top: 50px;
+}
+/* Breadcrumb item links */
+.breadcrumb-item a {
+    
+    color: white !important; /* Force the breadcrumb link to be white */
+    font-size: .7rem;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adding some shadow for contrast */
+}
+
+/* Change the color when the link is active or hovered */
+.breadcrumb-item a:hover {
+    color: #f0f0f0; /* Slightly lighter white on hover */
+    text-decoration: underline;
+}
+
+/* Style for the active breadcrumb displayed below */
+.active-breadcrumb {
+    /* Space between breadcrumb and active breadcrumb */
+    font-size: 2rem; /* Make the active breadcrumb text larger */
+    color: white; /* Keep it white */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+    position: relative;
+    z-index: 2; /* Ensure the active breadcrumb is above the overlay */
+    margin-top: -40px;
+}

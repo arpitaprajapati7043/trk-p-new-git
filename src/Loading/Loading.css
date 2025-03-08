@@ -1,0 +1,49 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 55px;
+    aspect-ratio: 1;
+    --g: conic-gradient(from -90deg at 10px 10px,#01292b 90deg,#0000 0);
+    background: var(--g), var(--g), var(--g);
+    background-size: 50% 50%;
+    animation: l19 1s infinite;
+  }
+  @keyframes l19 {
+     0%   {background-position:0     0, 10px 10px, 20px 20px}
+     33%  {background-position:10px  10px}
+     66%  {background-position:0    20px,10px 10px,20px 0   }
+     100% {background-position:0     0, 10px 10px, 20px 20px}
+  }
+
+
+
+
+  
+  /* HTML: <div class="loader"></div> */
+.loader2 {
+    width: 38px;
+    aspect-ratio: 1;
+    color: #e07b22;
+    position: relative;
+    background:
+      conic-gradient(from 134deg at top   ,currentColor 92deg,#0000 0) top,
+      conic-gradient(from -46deg at bottom,currentColor 92deg,#0000 0) bottom;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+  }
+  .loader2:before {
+    content:'';
+    position: absolute;
+    inset: 0;
+    --g:currentColor 14.5px,#0000 0 calc(100% - 14.5px),currentColor 0;
+    background:
+      linear-gradient( 45deg,var(--g)),
+      linear-gradient(-45deg,var(--g));
+     animation: l7 1.5s infinite cubic-bezier(0.3,1,0,1);
+  }
+  @keyframes l7 {
+     33%  {inset:-10px;transform: rotate(0deg)}
+     66%  {inset:-10px;transform: rotate(90deg)}
+     100% {inset:0    ;transform: rotate(90deg)}
+  }
+
+ 

@@ -1,0 +1,49 @@
+/* General Styles for Hero Component */
+.hero-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full height for the hero section */
+  color: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 70px; /* Adjust this to prevent overlap with the fixed navbar */
+  z-index: 1;
+}
+
+/* Overlay Style */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(13, 62, 84, 0.9); /* Semi-transparent overlay */
+  z-index: 2; /* Overlay z-index */
+}
+
+/* Hero Text Styling */
+.hero-text {
+  position: relative;
+  z-index: 3; /* Text content zIndex should be higher than overlay */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: rgba(179, 113, 14);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
